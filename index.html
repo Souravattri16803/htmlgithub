@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: white;
+}
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #58a6ff;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+nav a:hover {
+  color: #58a6ff;
+}
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: radial-gradient(circle at top, #172b46, #0d1117 65%);
+}
+.hero h1 {
+  font-size: clamp(40px, 7vw, 70px);
+  margin-bottom: 20px;
+}
+.hero h1 span {
+  color: #58a6ff;
+}
+.hero p {
+  color: #aab5c4;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+.btn {
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #238636;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: .3s;
+}
+.btn:hover {
+  background: #2ea043;
+  transform: translateY(-3px);
+}
+section {
+  padding: 75px 8%;
+  text-align: center;
+}
+h2 {
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+.card {
+  padding: 30px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  transition: .3s;
+}
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #58a6ff;
+}
+.card h3 {
+  color: #58a6ff;
+  margin-bottom: 15px;
+}
+.card p {
+  color: #aab5c4;
+  line-height: 1.6;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #161b22;
+  color: #8b949e;
+}
+@media(max-width:600px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+  nav a {
+    margin: 0 8px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MyWebsite</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>Welcome to <span>My Website</span></h1>
+  <p>
+    A modern, creative and responsive website
+    built with HTML, CSS and JavaScript.
+  </p>
+  <a href="#projects" class="btn">Explore Projects</a>
+</div>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="color:#aab5c4;line-height:1.8">
+    Welcome! This is my personal website.
+    I love technology, creativity and web development.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>A creative website project.</p>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>A modern responsive design.</p>
+    </div>
+    <div class="card">
+      <h3>Project Three</h3>
+      <p>An interactive web experience.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 MyWebsite. All rights reserved.
+</footer>
+
+</body>
+</html>
